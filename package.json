@@ -1,0 +1,29 @@
+{
+  "name": "gestao_biblioteca",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/app.js",
+    "build": "npx tsc",
+    "dev": "ts-node src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MizunoYudi/Gestao_Biblioteca.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MizunoYudi/Gestao_Biblioteca/issues"
+  },
+  "homepage": "https://github.com/MizunoYudi/Gestao_Biblioteca#readme",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.25",
+    "express": "^5.1.0",
+    "typescript": "^5.8.3"
+  }
+}
