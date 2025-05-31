@@ -1,0 +1,25 @@
+import { Estoque } from "../model/Estoque"
+
+export class EstoqueRepository {
+    private static instance: EstoqueRepository
+    private estoqueList: Estoque[] = []
+
+    public static getInstance(): EstoqueRepository {
+        if(!this.instance){
+            this.instance = new EstoqueRepository()
+        }
+        return this.instance
+    }
+
+    inserirExemplarEstoque(exemplar: Estoque){
+        this.estoqueList.push(exemplar)
+    }
+
+    buscarExemplarPorId(id: number){
+        const exemplar = this.estoqueList.findIndex(ex => ex.id = id)
+        if(exemplar == -1){
+            throw new Error("Exemplar não encontrado")
+        }
+        return exemplar
+    }
+}
